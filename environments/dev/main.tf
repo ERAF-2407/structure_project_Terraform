@@ -33,3 +33,12 @@ module "storage" {
   # Indicamos la ruta al archivo que creamos:
   website_source_path = "../../website_content/index.html"
 }
+
+# --- NUEVO MODULO SERVERLESS ---
+module "serverless" {
+  source = "../../modules/serverless"
+
+  environment      = "dev"
+  project_name     = "cursoaws"
+  source_code_path = "../../api_content"
+}

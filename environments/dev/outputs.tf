@@ -14,3 +14,8 @@ output "website_url" {
   description = "La URL del sitio web alojado en S3"
   value       = module.storage.website_endpoint
 }
+
+output "lambda_api_url" {
+  description = "URL de la API Serverless"
+  value       = module.serverless.api_endpoint
+}
